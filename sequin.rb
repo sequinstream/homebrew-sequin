@@ -1,7 +1,7 @@
 class Sequin < Formula
   desc "CLI tool for sequin"
   homepage "https://github.com/sequinstream/sequin"
-  url "https://github.com/sequinstream/sequin.git", tag: "v0.2.3"
+  url "https://github.com/sequinstream/sequin.git", tag: "v0.2.4"
   head "https://github.com/sequinstream/sequin.git", branch: "main"
 
   depends_on "go" => :build
