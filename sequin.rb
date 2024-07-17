@@ -1,13 +1,15 @@
 class Sequin < Formula
   desc "CLI tool for sequin"
-  homepage "https://github.com/sequin-io/sequin-cli"
-  url "https://github.com/sequin-io/sequin-cli.git", tag: "v0.2.0"
-  head "https://github.com/sequin-io/sequin-cli.git", branch: "main"
+  homepage "https://github.com/sequinstream/sequin"
+  url "https://github.com/sequinstream/sequin.git", tag: "v0.2.0"
+  head "https://github.com/sequinstream/sequin.git", branch: "main"
 
   depends_on "go" => :build
 
   def install
-    system "go", "build", *std_go_args(output: bin/"sequin")
+    cd "cli" do
+      system "go", "build", *std_go_args(output: bin/"sequin")
+    end
   end
 
   test do
