@@ -8,7 +8,7 @@ class Sequin < Formula
 
   def install
     cd "cli" do
-      system "go", "build", *std_go_args(output: bin/"sequin")
+      system "go", "build", "-tags", "prod", *std_go_args(output: bin/"sequin")
     end
   end
 
