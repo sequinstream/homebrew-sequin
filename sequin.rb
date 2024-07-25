@@ -25,7 +25,7 @@ class Sequin < Formula
   end
 
   def install
-    bin.install "sequin"
+    bin.install "sequin-cli-#{version}-#{OS.mac? ? 'darwin' : 'linux'}-#{Hardware::CPU.arm? ? 'arm64' : 'amd64'}" => "sequin"
   end
 
   test do
