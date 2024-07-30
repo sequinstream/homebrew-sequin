@@ -5,6 +5,6 @@
 Install Go. See: https://golang.org/doc/install
 
 ```
-brew tap sequin-io/sequin
+brew tap sequinstream/sequin
 brew install sequin
 ```
