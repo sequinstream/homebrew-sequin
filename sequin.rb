@@ -1,26 +1,26 @@
 class Sequin < Formula
   desc "CLI tool for sequin"
   homepage "https://github.com/sequinstream/sequin"
-  version "v0.6.34"
+  version "v0.6.35"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/sequinstream/sequin/releases/download/#{version}/sequin-cli-#{version}-darwin-arm64.zip"
-      sha256 "f72e6e0a9060d3b47a7233b2ba9c6c9c3972a466be83a422560dc36889f758ec" # tag:darwin-arm64
+      sha256 "949c2bc66ff2705e564e7f41caa862e6e37ec656546a9a0f178d9e6f298302c2" # tag:darwin-arm64
     else
       url "https://github.com/sequinstream/sequin/releases/download/#{version}/sequin-cli-#{version}-darwin-amd64.zip"
-      sha256 "b479037d6545e9da159a7e2174477fe135b626288407ae9ec30a801bec98c8ea" # tag:darwin-amd64
+      sha256 "8a215073f635bfde2fada9fc83b87dd448d740695746c97ccc31e2d5b3db871e" # tag:darwin-amd64
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/sequinstream/sequin/releases/download/#{version}/sequin-cli-#{version}-linux-arm64.zip"
-      sha256 "94c7ad93912c63cf54ea55bb8794421f250e3606d3145b1dda8a09d16f167426" # tag:linux-arm64
+      sha256 "ceabb2c067a7defe9daaf2b4c3016928e5cb3222e25980d1b473c3d25129abd4" # tag:linux-arm64
     else
       url "https://github.com/sequinstream/sequin/releases/download/#{version}/sequin-cli-#{version}-linux-amd64.zip"
-      sha256 "4320745049ee00e7b9dc15f29a330a85824caca2885e342613ff1b42587f78a1" # tag:linux-amd64
+      sha256 "96610f2df264c4deb707a977b0cff14c17294af2118849422956be333df509f7" # tag:linux-amd64
     end
   end
 
